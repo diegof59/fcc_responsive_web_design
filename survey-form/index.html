@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>We're going out | Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title" class="title">We're going out</h1>
+      <p id="description" class="description">A survey to a startup</p>
+    </header>
+  	<form id="survey-form">
+      <div class="form-group">
+    		<label id="name-label" class="label-block" for="name">Name</label>
+    		<input id="name" class="form-input" type="text" name="name" required placeholder="Your name">
+  		</div>
+      <div class="form-group">
+        <label id="email-label" class="label-block" for="email">E-mail</label>
+    		<input id="email" class="form-input" type="email" name="email" required placeholder="Your e-mail">
+  		</div>
+      <div class="form-group">
+        <label id="number-label" class="label-block" for="number">Age</label>
+    		<input id="number" class="form-input" type="number" name="age" min="14" max="99" placeholder="Your age">
+  		</div>
+      <div class="form-group">
+        <label id="dropdown-label" class="label-block" for="dropdown">Favorite plan to go out</label>
+        <select id="dropdown" class="form-input" type="select" name="prefered-plan">
+          <option disabled selected>Select your prefered plan for going out...</option>
+          <option value="eating">Eating</option>
+          <option value="dancing">Dancing</option>
+          <option value="drinking">Drinking</option>
+          <option value="music">Music gigs</option>
+        </select>
+      </div>
+      <fieldset class="form-group form-choices">
+        <legend>¿Dudas a dónde ir cuando sales con amigos?</legend>
+        <div class="form-group-choices">
+          <label for="">Almost always</label>
+          <input class="input-choice" type="radio" name="deciding" value="almost-always">
+        </div>
+        <div class="form-group-choices">
+          <label for="">Sometimes</label>
+          <input class="input-choice" type="radio" name="deciding" value="sometimes">
+        </div>
+        <div class="form-group-choices">
+          <label for="">Almost never</label>
+          <input class="input-choice" type="radio" name="deciding" value="almost-never">
+        </div>
+      </fieldset>
+      <fieldset class="form-group form-choices">
+        <legend>¿Qué factores tienes en cuenta para escoger a dónde salir?</legend>
+        <div class="form-group-choices">
+          <label for="">Nearness</label>
+          <input class="input-choice" type="checkbox" name="criteria" value="nearness">
+        </div>
+        <div class="form-group-choices">
+          <label for="">Positive ratings</label>
+          <input class="input-choice" type="checkbox" name="criteria" value="ratings">
+        </div>
+        <div class="form-group-choices">
+          <label for="">Past experiences</label>
+          <input class="input-choice" type="checkbox" name="criteria" value="experiences">
+        </div>
+        <div class="form-group-choices">
+          <label for="">Advertising you've seen</label>
+          <input class="input-choice" type="checkbox" name="criteria" value="ads">
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <label id="dropdown-label" class="label-block" for="dropdown">Favorite plan to go out</label>
+        <textarea class="form-input form-text-area" placeholder="Have some comments for us?"></textarea>
+      </div>
+      <button type="submit" id="submit" class="submit-button">
+          Submit
+      </button>
+
+  	</form>
+  </div>
+</body>
